@@ -13,7 +13,7 @@ def initTrajectory(mode):
         # saves trajectory
         np.savetxt(fileName, waypoints, delimiter=',') 
     else:
-        fileName = 'trajectories/'+ str(np.loadtxt('init/load.traj_conf', dtype=str))
+        fileName = 'trajectories/'+ str(np.loadtxt('src/init/load.traj_conf', dtype=str))
         waypoints = np.loadtxt(fileName, delimiter=',', dtype=float)
 
     return waypoints, fileName
