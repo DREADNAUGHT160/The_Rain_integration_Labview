@@ -463,10 +463,10 @@ class mainWindowSetUp(qtw.QMainWindow):
             actorName = 'platform robot'
         lineText = actorName + ': ' + fileName[fileName.rindex('/')+1:]
         # reads file content
-        with open('./init/load.traj_conf','r')  as fileContent:
+        with open('./src/init/load.traj_conf','r')  as fileContent:
             fileData = self.parseTrajConfigFile('write', actorName, fileContent)
         fileData.append(lineText)
-        with open('./init/load.traj_conf','w')  as fileContent:
+        with open('./src/init/load.traj_conf','w')  as fileContent:
             if not (fileData[len(fileData)-2][-1:] == '\n'):
                 fileData[len(fileData)-2] += '\n'
             fileContent.write(''.join(fileData))
@@ -497,7 +497,7 @@ class mainWindowSetUp(qtw.QMainWindow):
                         idxEnd = item.index('\n')
                     except:
                         idxEnd = len(item)
-                    waypoints = np.loadtxt('trajectories/'+ item[idxStr:idxEnd].strip(), delimiter=',', dtype=float)
+                    waypoints = np.loadtxt('src/trajectories/'+ item[idxStr:idxEnd].strip(), delimiter=',', dtype=float)
                             
                     return waypoints
                     
