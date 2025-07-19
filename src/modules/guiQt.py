@@ -497,7 +497,7 @@ class mainWindowSetUp(qtw.QMainWindow):
                         idxEnd = item.index('\n')
                     except:
                         idxEnd = len(item)
-                    waypoints = np.loadtxt('trajectories/'+ item[idxStr:idxEnd].strip(), delimiter=',', dtype=float)
+                    waypoints = np.loadtxt('src/trajectories/'+ item[idxStr:idxEnd].strip(), delimiter=',', dtype=float)
                             
                     return waypoints
                     

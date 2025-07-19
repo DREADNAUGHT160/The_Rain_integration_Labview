@@ -1,6 +1,6 @@
 # The Rain Integration LabView
 
-This project provides a simple PySide6 based GUI for controlling a driving robot and platform robot. Configuration and trajectory files live in the `src/init` directory.
+This project provides a simple PySide6 based GUI for controlling a driving robot and platform robot. Configuration files live in `src/init` while trajectory files reside in `src/trajectories`.
 
 ## Setup
 
