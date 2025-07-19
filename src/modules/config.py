@@ -5,7 +5,7 @@ class Config:
     def __init__(self):
         # load
         try:
-            fileContent = open('./init/config.conf','r')
+            fileContent = open('./src/init/config.conf','r')
             # parser function
             dataToExtract = ['ip', 'port', 'update frequency', 'time out of driving robot', 'transformation']
             self.parseTextFromConfig(fileContent, dataToExtract)
