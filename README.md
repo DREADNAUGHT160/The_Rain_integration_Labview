@@ -21,20 +21,6 @@ python src/main.py
 
 On start, the GUI reads settings from `src/init/config.conf` and loads the last saved trajectory from `src/init/load.traj_conf`.
 
-### Rain Integration
-
-The repository includes a second GUI for controlling the LabVIEW rain and fog
-system. Open it from the **Control Center** by clicking the `rain` button or run
-it directly:
-
-```bash
-python src/modules/rainHandler.py
-```
-
-The control panel communicates with LabVIEW over TCP. Adjust `TCP_IP` and
-`TCP_PORT` at the top of `src/modules/rainHandler.py` if your LabVIEW setup uses
-different connection parameters.
-
 ## Repository Structure
 
 - `src/modules/` – application modules and handlers
