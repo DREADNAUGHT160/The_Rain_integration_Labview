@@ -6,14 +6,14 @@ from scipy.integrate import quad
 def initTrajectory(mode):
     ## Waypoints
     if mode:
-        fileName = 'trajectories/' + datetime.now().strftime('%y%m%d_%H%M') + '.traj' # change when GUI is implemented
+        fileName = 'src/trajectories/' + datetime.now().strftime('%y%m%d_%H%M') + '.traj' # change when GUI is implemented
         dataStart, dataWaypoints = userInputTrajectory()
         ## Waypoints: ID x, y, v, a, theta, kappa
         waypoints = createWaypoints(dataStart, dataWaypoints)
         # saves trajectory
         np.savetxt(fileName, waypoints, delimiter=',') 
     else:
-        fileName = 'trajectories/'+ str(np.loadtxt('init/load.traj_conf', dtype=str))
+        fileName = 'src/trajectories/'+ str(np.loadtxt('src/init/load.traj_conf', dtype=str))
         waypoints = np.loadtxt(fileName, delimiter=',', dtype=float)
 
     return waypoints, fileName
