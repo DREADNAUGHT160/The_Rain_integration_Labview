@@ -20,7 +20,7 @@ class Config:
             self.port = 1238            # port of server
         if not hasattr(self, 'freq'):
             self.freq = 20              # [Hz] update rate
-        if not hasattr(self, 'time out of driving robot'):
+        if not hasattr(self, 'timeOutDR'):
             self.timeOutDR = 1            # [s] elapsed time until test is interrupted
 
         # variables AK communication
@@ -55,7 +55,7 @@ class Config:
                         case 'update frequency':
                             self.freq = item[idxStr:idxEnd]
                         case 'time out of driving robot':
-                            self.timeOut = item[idxStr:idxEnd]
+                            self.timeOutDR = item[idxStr:idxEnd]
                         case 'transformation':
                             self.ENU2Local = float(item[idxStr:idxEnd])
                 except:
