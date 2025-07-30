@@ -2,6 +2,12 @@
 
 This project provides a simple PySide6 based GUI for controlling a driving robot and platform robot. Configuration files live in `src/init` while trajectory files reside in `src/trajectories`.
 
+## Features
+
+- Real-time control of both a driving robot and a platform robot.
+- Configuration driven through plain-text files under `src/init`.
+- Trajectory management with editable files in `src/trajectories`.
+
 ## Setup
 
 1. Create a Python environment (optional but recommended).
