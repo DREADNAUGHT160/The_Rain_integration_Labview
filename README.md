@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # The Rain Integration LabVIEW
 
 This repository contains Python-based GUI tools and simulators for integrating rain and fog control systems with a LabVIEW-style interface. The applications communicate with a controller over TCP using newline-delimited JSON frames and are built with [PyQt6](https://pypi.org/project/PyQt6/).
@@ -262,4 +261,3 @@ If you want to run Rain/Fog GUIs as **part of a larger PyQt6 application**:
 - **Ctrl+R** → Reconnect  
 
 ---
->>>>>>> ef899fb (final version of the gui)
